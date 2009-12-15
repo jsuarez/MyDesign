@@ -18,7 +18,7 @@
         
         	<div class="column">
             	<div class="image_services"><img src="images/image_web.png" alt="diseño" border="0" /></div>
-           	  	<h1>Dise&ntilde;o Web</h1>
+           	  	<h1>Dise&ntilde;o Web 1</h1>
                 <p>Realizamos dise&ntilde;o de paginas web para empresas y particulares generando nuevas oportinidades de negocio</p>
                 <div class="li_servicios">
                     <ul>

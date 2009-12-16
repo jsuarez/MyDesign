@@ -1,0 +1,16 @@
+/* 
+    Document   : style
+    Created on : 22/11/2009, 13:13:18
+    Author     : ivan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#myslidergallery {float:left; margin:0; padding:0; position:relative; left:0px;}
+#myslidergallery li{list-style-type:none; float:left; display:inline; width:434px; height:138px; padding:0;}
+#myslidergallery li a{display: block; padding:2px; border:none !important;}
+#myslidergallery li a img{display: block; margin: 0 auto; border:none !important;}
+#myslidergallery a:hover{text-decoration:none  !important;}
+
+
+

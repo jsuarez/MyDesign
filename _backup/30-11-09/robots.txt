@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /conection/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /panel/
+Disallow: /images/

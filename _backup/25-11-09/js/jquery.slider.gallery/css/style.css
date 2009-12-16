@@ -1,0 +1,17 @@
+/* 
+    Document   : style
+    Created on : 22/11/2009, 13:13:18
+    Author     : ivan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#myslidergallery {float:left; margin:0; padding:0; position:relative; left:0px;}
+#myslidergallery li{list-style-type:none; float:left; display:inline; width:200px; height:170px; padding:0;}
+#myslidergallery li .img-cnt{/*background: url(../img/image-shadow.png) no-repeat 0 0;*/ width: 200px; height: 170px; float: left;}
+#myslidergallery li .img-cnt img{display: block; margin: 0 auto; padding: 4px;}
+#myslidergallery a img{border:none !important;}
+#myslidergallery a:hover{text-decoration:none  !important;}
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.mydesign.com.es/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/disenio_web.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/disenio_grafico.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/marketing_online.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/portfolio.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/blog/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/index.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/contacto.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mydesign.com.es/la_empresa.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

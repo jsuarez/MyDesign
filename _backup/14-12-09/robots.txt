@@ -1,7 +1,0 @@
-User-agent: * 
-Disallow: /conection/
-Disallow: /includes/
-Disallow: /js/
-Disallow: /panel/
-Disallow: /images/
-Sitemap: http://www.mydesign.com.es/sitemap.xml

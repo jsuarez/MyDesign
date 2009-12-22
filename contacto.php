@@ -62,8 +62,21 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                             <!-- end .formularios -->
 
                             <div class="formularios linea">
+                                <div class="form_center">
+                                    <h3>Descripci&oacute;n del Proyecto</h3><br />
+                                <div class="row_option">
+                                    <div class="box2"><input type="radio" name="opt1" /></div>
+                                    <span>Dise&ntilde;o Web.</span>
+                                    <div class="box2"><input type="radio" name="opt2" /></div>
+                                    <span>Dise&ntilde;o Grafico.</span>
+                                    <div class="box2"><input type="radio" name="opt3" /></div>
+                                    <span>Marketing On-Line.</span>
+                                    <br  />
+                                    </div>
+                                </div>
+
                                 <div class="form_left">
-                                    <h3>Descripci&oacute;n del Proyecto</h3>
+                                    
 
                                     <div class="row">
                                         <span class="t1">¿Cuenta con una im&aacute;gen gr&aacute;fica corporativa?</span>
@@ -74,23 +87,23 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                         <span>Tarea:</span>
                                         <select name="cboTask" id="cboTask">
                                           <option value="Creaci&oacute;n de un nuevo sitio">Creaci&oacute;n de un nuevo sitio</option>
-                                          <option value="Creaci&oacute;n de una web existente">Creaci&oacute;n de una web existente</option>
-                                          <option value="Desarrollo de un CD-Room">Desarrollo de un CD-Room</option>
+                                          <option value="Redise&ntilde;o de una web existente">Redise&ntilde;o de una web existente</option>
                                         </select>
                                     </div>
                                     <div class="row"><span>Tipo de sitio web</span>
                                         <select name="cboTypeWeb" id="cboTypeWeb">
-                                            <option value="Personal">Personal</option>
-                                            <option value="Institucional">Institucional</option>
-                                            <option value="Portal">Portal</option>
+                                            <option value="Web Corporativa">Web Corporativa</option>
+                                            <option value="Web Autoadministrable">Web Autoadministrable</option>
                                             <option value="Cat&aacute;logo de Productos">Cat&aacute;logo de Productos</option>
-                                            <option value="Cat&aacute;logo y venta de productos">Cat&aacute;logo y venta de productos</option>
+                                            <option value="Carrito de Compras">Carrito de Compras</option>
+                                            <option value="Sistema Inmobiliario">Sistema Inmobiliario</option>
+                                            <option value="Sistema Tur&iacute;stico">Sistema Tur&iacute;stico</option>
                                         </select>
                                     </div>
 
                                  </div>
                                 <div class="form_right">
-                                    <h3>&nbsp;</h3>
+                                    
                                     <div class="row">
                                         <span class="t1">Prespuestar Dise&ntilde;o de la marca</span>
                                         <span class="t2">(logotipo, isotipo, isologotipo)</span>
@@ -101,7 +114,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                         <div class="input"><input type="text" name="txtWebCurrent" /></div>
                                     </div>
                                     <div class="row">
-                                        <span>Sitio web Corporativa</span>
+                                        <span>Sitio web Comparativo</span>
                                         <div class="input"><input type="text" name="txtSiteCorporate" /></div>
                                         <span class="t2">Alg&uacute;n sitio que refleje en parte las funcionalidades de su propio desarrollo, no necesariamente su dise&ntilde;o est&eacute;tico.</span>
                                     </div>
@@ -137,7 +150,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                     </div>
                                     <div class="row">
                                         <div class="box2"><input type="checkbox" name="chk8" /></div>
-                                        <span>Cat&aacute;logo, Base de datos de productos.</span><span class="t2">con venta on-line y carrito de compras</span>
+                                        <span>Adaptacion sistema de pagos on-line.</span><span class="t2">con venta on-line y carrito de compras</span>
                                     </div>
                                 </div>
                                 <div class="form_center">

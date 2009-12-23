@@ -44,6 +44,40 @@ var Presup = new (function(){
                 }
                 return true;
             })
+
+            $(".box2.option").each(function(){
+                $(this).find("input").click(function(){
+                    switch( this.value ){
+                        case "dweb":
+                            $("#cboTask").empty()
+                                         .append('<option value="Creaci&oacute;n de un nuevo sitio">Creaci&oacute;n de un nuevo sitio</option>')
+                                         .append('<option value="Redise&ntilde;o de una web existente">Redise&ntilde;o de una web existente</option>');
+                            combobox.update("#cboTask");
+                        break;
+
+                        case "dgrafico":
+                            $("#cboTask").empty()
+                                         .append('<option value="Identidad Corporativa">Identidad Corporativa</option>')
+                                         .append('<option value="Dise&ntilde;o Publicitario">Dise&ntilde;o Publicitario</option>')
+                                         .append('<option value="Dise&ntilde;o de Packaging">Dise&ntilde;o de Packaging</option>')
+                                         .append('<option value="Dise&ntilde;o de Newsletters">Dise&ntilde;o de Newsletters</option>')
+                                         .append('<option value="Dise&ntilde;o Editorial">Dise&ntilde;o Editorial</option>');
+                            combobox.update("#cboTask");
+                        break;
+
+                        case "marketing":
+                            $("#cboTask").empty()
+                                         .append('<option value="E-Mail Marketing">E-Mail Marketing</option>')
+                                         .append('<option value="Search Engine Marketing">Search Engine Marketing</option>')
+                                         .append('<option value="Marketing Viral">Marketing Viral</option>');
+                            combobox.update("#cboTask");
+                        break;
+                    }
+                    $(".hidden-div").css("display", "none");
+
+                })
+
+            });
         }
     });
 						   

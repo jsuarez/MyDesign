@@ -9,13 +9,15 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
 <head>
     <title>Dise&ntilde;o de paginas web en Madrid Espa&ntilde;a | Dise&ntilde;o Web Profesional</title>
     <?php include("includes/head.php");?>    
-    <script type="text/javascript" src="js/presup.js"></script>
     
     <!--======= SCRIPT "COMBOBOX" =======-->
     <link href="js/jquery.combobox/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery.combobox/js/jquery.combobox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.combobox/js/jquery.combobox.js"></script>
     <script type="text/javascript" src="js/jquery.combobox/js/execute.js"></script>
     <!--======= END SCRIPT =======-->
+
+    <script type="text/javascript" src="js/presup.js"></script>
+
 </head>
 
 <body>
@@ -65,19 +67,17 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                 <div class="form_center">
                                     <h3>Descripci&oacute;n del Proyecto</h3><br />
                                 <div class="row_option">
-                                    <div class="box2"><input type="radio" name="opt1" /></div>
+                                    <div class="box2 option"><input type="radio" name="option" value="dweb" checked="checked" /></div>
                                     <span>Dise&ntilde;o Web.</span>
-                                    <div class="box2"><input type="radio" name="opt2" /></div>
+                                    <div class="box2 option"><input type="radio" name="option" value="dgrafico" /></div>
                                     <span>Dise&ntilde;o Grafico.</span>
-                                    <div class="box2"><input type="radio" name="opt3" /></div>
+                                    <div class="box2 option"><input type="radio" name="option" value="marketing" /></div>
                                     <span>Marketing On-Line.</span>
                                     <br  />
                                     </div>
                                 </div>
 
                                 <div class="form_left">
-                                    
-
                                     <div class="row">
                                         <span class="t1">¿Cuenta con una im&aacute;gen gr&aacute;fica corporativa?</span>
                                         <span class="t2">(logo, dise&ntilde;o de la marca)</span>
@@ -90,7 +90,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                           <option value="Redise&ntilde;o de una web existente">Redise&ntilde;o de una web existente</option>
                                         </select>
                                     </div>
-                                    <div class="row"><span>Tipo de sitio web</span>
+                                    <div class="row hidden-div"><span>Tipo de sitio web</span>
                                         <select name="cboTypeWeb" id="cboTypeWeb">
                                             <option value="Web Corporativa">Web Corporativa</option>
                                             <option value="Web Autoadministrable">Web Autoadministrable</option>
@@ -109,11 +109,11 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                         <span class="t2">(logotipo, isotipo, isologotipo)</span>
                                         <div class="box"><input type="checkbox" name="chk2" /></div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row hidden-div">
                                         <span>Sitio web actual</span>
                                         <div class="input"><input type="text" name="txtWebCurrent" /></div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row hidden-div">
                                         <span>Sitio web Comparativo</span>
                                         <div class="input"><input type="text" name="txtSiteCorporate" /></div>
                                         <span class="t2">Alg&uacute;n sitio que refleje en parte las funcionalidades de su propio desarrollo, no necesariamente su dise&ntilde;o est&eacute;tico.</span>
@@ -125,20 +125,20 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                             <div class="formularios">
                                 <div class="form_left">
                                     <h3>Otras Caracter&iacute;sticas</h3>
-                                    <div class="row">
+                                    <div class="row hidden-div">
                                         <div class="box2"><input type="checkbox" name="chk3" /></div>
                                         <span>Formulario de Consulta</span>
                                     </div>
-                                    <div class="row">
+                                    <div class="row hidden-div">
                                         <div class="box2"><input type="checkbox" name="chk4" /></div>
                                         <span>M&uacute;sica de fondo</span>
                                     </div>
-                                    <div class="row">
+                                    <div class="row hidden-div">
                                         <div class="box2"><input type="checkbox" name="chk5" /></div>
                                         <span>Video</span><span class="t2">(hasta 5 clips)</span>
                                     </div>
                                 </div>
-                                <div class="form_right">
+                                <div class="form_right hidden-div">
                                     <h3>&nbsp;</h3>
                                     <div class="row">
                                         <div class="box2"><input type="checkbox" name="chk6" /></div>
@@ -153,7 +153,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                         <span>Adaptacion sistema de pagos on-line.</span><span class="t2">con venta on-line y carrito de compras</span>
                                     </div>
                                 </div>
-                                <div class="form_center">
+                                <div class="form_center hidden-div">
                                     <div class="box2"><input type="checkbox" name="chk9" /></div>
                                     <span>Sistema de carga y actualizaci&oacute;n de contenidos del sitio.</span><br />
                                     <p><span class="t2">Este sistema le permite actualizar peri&oacute;dicamente a Ud. los contenidos de su sitio, textos, im&aacute;genes, etc. <br />(Tenga en cuenta que este sistema tiene un costo importante en el desarrollo del sitio y no siempre es necesario en funci&oacute;n del proyecto a desarrollar)</span></p>&nbsp;<br  />
@@ -161,20 +161,20 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                     <span>Espa&ntilde;ol e Ingl&eacute;s</span><br />
                                     <p><span class="t2">Traducci&oacute;n a cargo del cliente o presupuesto por separado</span></p>
                                 </div>
-                                <div class="form_left">
+                                <div class="form_left hidden-div">
                                     <div class="row">
                                         <div class="box2"><input type="checkbox" name="chk11" /></div>
                                         <span>Configuraci&oacute;n de un Foro</span>
                                     </div>
                                 </div>
-                                <div class="form_right">
+                                <div class="form_right hidden-div">
                                     <div class="row">
                                         <div class="box2"><input type="checkbox" name="chk12" /></div>
                                         <span>Chat On-Line</span>
                                     </div>
                                 </div>
                                 <div class="form_center">
-                                    <span>Otros Comentarios:</span>
+                                    <span>Comentarios:</span>
                                     <div class="text_area"><textarea name="txtComment" cols="50" rows="5"></textarea></div>
 
                                     <div class="button_presupuesto">

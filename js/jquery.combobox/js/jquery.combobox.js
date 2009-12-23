@@ -23,17 +23,44 @@ var ClassComboBox = function(options){
 
     var combo = false;
     $(document).ready(function(){
-        combo = $(options.selector);
-        if( combo.length>0 ) show_combo();
+        show_combo(options.selector);
     });
 
 
      /* PUBLIC PROPERTIES
       *************************************************************************/
+     this.elements = new Array();
+
 
      /* PUBLIC METHODS
       *************************************************************************/
-	
+      this.update = function(selector){
+          if( !selector ) selector = options.selector;
+          $(selector).each(function(i){
+                var div = $(this).next();
+                div.find(".jquery-combo-input").html(this.options[0].text);
+                var ul = div.find("ul");
+                ul.empty();
+
+                for( var i=0; i<=this.options.length-1; i++ ){
+                    var li = document.createElement("LI");
+                    var a = document.createElement("A");
+
+                    $(a).attr("href", "#"+i)
+                        .html(this.options[i].text)
+                        .bind("click", show_item)
+                        .hover(function(){itemHover=true}, function(){itemHover=false;});
+
+                    $(li).addClass("jquery-combo-list-item")
+                         .append(a);
+
+                    $(ul).append(li);
+                }
+
+          });
+
+          return false;
+      };
 
 
      /* PRIVATE PROPERTIES                
@@ -43,8 +70,9 @@ var ClassComboBox = function(options){
 
      /* PRIVATE METHODS	  	  	       
       *************************************************************************/
-	var show_combo = function(){		
-            combo.each(function(i){
+	var show_combo = function(selector){
+            $(selector).each(function(i){
+
                 $(this).css("display", "none");
 
                 var div = document.createElement("DIV");
@@ -87,7 +115,9 @@ var ClassComboBox = function(options){
                            .append(ul);
 
                 $(div).append(div_input, a_arrow, div_list);
+
                 $(this).after(div);
+                if( this.id!="" ) This.elements[this.id]=div;
             });
 	};
 	// END FUNCTION  (show_combo)

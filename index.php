@@ -57,7 +57,7 @@
                             <li>Comunicaci&oacute;n</li>
                         </ul>
                     </div>
-                    <div class="price">Desde <img src="images/valor_web.png" border="0" alt="450" /></div>
+                    <div class="price">Desde <img src="images/valor_graphic.png" border="0" alt="450" /></div>
                 </div>
                 <!--end .column-->
 
@@ -81,7 +81,7 @@
                             <li>Analytics</li>
                         </ul>
                     </div>
-                    <div class="price">Desde <img src="images/valor_web.png" border="0" alt="450" /></div>
+                    <div class="price">Desde <img src="images/valor_marketing.png" border="0" alt="450" /></div>
                 </div>
                 <!--end .column-->
             </div>

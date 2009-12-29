@@ -47,7 +47,7 @@
 
                         <a href="http://www.aikidoargentina.com" target="_blank">www.aikidoargentina.com</a>
                     </div>
-                    <div class="image_portfolio"><img src="images/portfolio/latinoamericaexporta.png"  alt="Latino America Exporta" /></div>
+                    <div class="image_portfolio"><img src="images/portfolio/aikidoargentina.png"  alt="Latino America Exporta" /></div>
                 </div>
                 <!--end .portfolio-->
 
@@ -59,7 +59,7 @@
 
                         <a href="http://www.federicoazpilcueta.com" target="_blank">www.federicoazpilcueta.com</a>
                     </div>
-                    <div class="image_portfolio"><img src="images/portfolio/latinoamericaexporta.png"  alt="Latino America Exporta" /></div>
+                    <div class="image_portfolio"><img src="images/portfolio/federicoazpilcueta.png"  alt="Latino America Exporta" /></div>
                 </div>
                 <!--end .portfolio-->
 

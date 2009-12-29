@@ -80,12 +80,12 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                 <div class="form_left">
                                     <div class="row">
                                         <span class="t1">¿Cuenta con una im&aacute;gen gr&aacute;fica corporativa?</span>
-                                        <span class="t2">(logo, dise&ntilde;o de la marca)</span>
                                         <div class="box"><input type="checkbox" name="chk1" /></div>
+                                        <span class="t2">(logo, dise&ntilde;o de la marca)</span>
                                     </div>
                                     <div class="row">
                                         <span>Tarea:</span>
-                                        <select name="cboTask" id="cboTask">
+                                        <select name="cboTask" id="cboTask" onchange="Presup.change_task(this);">
                                           <option value="Creaci&oacute;n de un nuevo sitio">Creaci&oacute;n de un nuevo sitio</option>
                                           <option value="Redise&ntilde;o de una web existente">Redise&ntilde;o de una web existente</option>
                                         </select>
@@ -100,14 +100,21 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                             <option value="Sistema Tur&iacute;stico">Sistema Tur&iacute;stico</option>
                                         </select>
                                     </div>
-
+                                    <div class="row hidden-div3">
+                                        <span>Presupuestar Dise&ntilde;o Newsletter</span>
+                                        <div class="box"><input type="checkbox" name="chk13" /></div>
+                                    </div>
+                                    <div class="row hidden-div3">
+                                        <span>Presupuestar Base de Datos de mails</span>
+                                        <div class="box"><input type="checkbox" name="chk14" /></div>
+                                    </div>
                                  </div>
-                                <div class="form_right">
-                                    
+
+                                <div class="form_right">                                    
                                     <div class="row">
                                         <span class="t1">Prespuestar Dise&ntilde;o de la marca</span>
-                                        <span class="t2">(logotipo, isotipo, isologotipo)</span>
                                         <div class="box"><input type="checkbox" name="chk2" /></div>
+                                        <span class="t2">(logotipo, isotipo, isologotipo)</span>
                                     </div>
                                     <div class="row hidden-div">
                                         <span>Sitio web actual</span>
@@ -118,6 +125,16 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                         <div class="input"><input type="text" name="txtSiteCorporate" /></div>
                                         <span class="t2">Alg&uacute;n sitio que refleje en parte las funcionalidades de su propio desarrollo, no necesariamente su dise&ntilde;o est&eacute;tico.</span>
                                     </div>
+                                    <div class="row hidden-div2">
+                                        <span>Poblaci&oacute;n Objetivos</span>
+                                        <select name="cboTypeWeb" id="cboPoblacion">
+                                            <option value="Espa&ntilde;a">Espa&ntilde;a</option>
+                                            <option value="Paises Habla Hispana">Paises Habla Hispana</option>
+                                            <option value="Todos">Todos</option>
+                                            <option value="otros">otros</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                             </div>
                             <!-- end .formularios -->

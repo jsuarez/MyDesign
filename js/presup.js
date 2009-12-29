@@ -10,6 +10,13 @@ var Presup = new (function(){
         $(".msgerror").slideUp("slow");
         document.formPresup.reset();
     };
+    
+    this.change_task = function(el){
+        if( el.selctedIndex==0 )
+            $("div.hidden-div3").css("display", "block");
+        else
+            $("div.hidden-div3").css("display", "none");
+    };
 
     var valid = function(){
         if( !$(document.formPresup.txtName).triggerHandler("blur") ) return false;
@@ -53,6 +60,8 @@ var Presup = new (function(){
                                          .append('<option value="Creaci&oacute;n de un nuevo sitio">Creaci&oacute;n de un nuevo sitio</option>')
                                          .append('<option value="Redise&ntilde;o de una web existente">Redise&ntilde;o de una web existente</option>');
                             combobox.update("#cboTask");
+                            $("div.hidden-div").css("display", "block");
+                            $("div.hidden-div2, div.hidden-div3").css("display", "none");
                         break;
 
                         case "dgrafico":
@@ -63,6 +72,7 @@ var Presup = new (function(){
                                          .append('<option value="Dise&ntilde;o de Newsletters">Dise&ntilde;o de Newsletters</option>')
                                          .append('<option value="Dise&ntilde;o Editorial">Dise&ntilde;o Editorial</option>');
                             combobox.update("#cboTask");
+                            $("div.hidden-div, div.hidden-div2, div.hidden-div3").css("display", "none");
                         break;
 
                         case "marketing":
@@ -71,9 +81,10 @@ var Presup = new (function(){
                                          .append('<option value="Search Engine Marketing">Search Engine Marketing</option>')
                                          .append('<option value="Marketing Viral">Marketing Viral</option>');
                             combobox.update("#cboTask");
+                            $("div.hidden-div").css("display", "none");
+                            $("div.hidden-div2, div.hidden-div3").css("display", "block");
                         break;
                     }
-                    $(".hidden-div").css("display", "none");
 
                 })
 

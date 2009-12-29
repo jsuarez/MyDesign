@@ -74,7 +74,7 @@ h3{
     font-size:10px;
     display:none;
 }
-
+.hidden-div2,.hidden-div3{display:none;}
 
 /* Sugerencias para diseños elásticos 
 1. Dado que el tamaño global de los diseños elásticos se basa en el tamaño de fuente predeterminado del usuario, resultan algo más impredecibles. Si se utilizan correctamente, también son más accesibles para aquellas personas que necesitan tamaños de fuentes más grandes, dado que la longitud de línea mantiene la proporcionalidad.
@@ -520,14 +520,13 @@ h3{
                                         }
                                         #mainContent .servicios .container_presupuesto .formularios .row{
                                             float:left;
-                                            width:300px;
+                                            width:330px;
                                             margin-top:10px;
                                             padding-bottom:10px;
                                         }
                                             #mainContent .servicios .container_presupuesto .formularios .row .box{
                                                 width:15px;
                                                 float:right;
-                                                margin-top:-15px;
                                             }
                                         #mainContent .servicios .container_presupuesto .formularios .box2{
                                             width:15px;
@@ -546,6 +545,7 @@ h3{
                                             color:#5CC151;
                                             font-style:italic;
                                             font-size:11px;
+                                            clear:left;
                                         }
                         #mainContent .servicios .container_presupuesto .text_empresa {
                             text-align:justify;

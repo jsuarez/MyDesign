@@ -4,7 +4,7 @@
 
 <link rel="shortcut icon" href="images/favicon.ico" />
 
-<link href="style/style.min.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
 <!--[if IE]> 
 <link href="style/styleIE.css" rel="stylesheet" type="text/css" />
 <![endif]-->

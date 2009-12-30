@@ -499,9 +499,9 @@ h3{
                                                         font-size:11px;
                                                         color:#FFFFFF;
                                                         border:none;
-                                                        padding-top:5px;
-                                                        background:url(../images/button_presupuesto.png) no-repeat top left;
-                                                        width:120px;
+                                                        padding-top:0px;
+                                                        background:url(../images/button_presupuesto2.png) no-repeat top left;
+                                                        width:132px;
                                                         height:21px;
                                                     }
                                                     #mainContent .servicios .container_presupuesto .formularios .form_center .button_presupuesto .send{

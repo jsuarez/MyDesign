@@ -12,7 +12,7 @@ var Presup = new (function(){
     };
     
     this.change_task = function(el){
-        if( el.selctedIndex==0 )
+        if( el.selectedIndex==0 )
             $("div.hidden-div3").css("display", "block");
         else
             $("div.hidden-div3").css("display", "none");
@@ -35,7 +35,7 @@ var Presup = new (function(){
                     $(".msgerror.name").slideUp("slow");
                     return true;
                 }
-            })
+            });
             $(document.formPresup.txtEmail).blur(function(){
                 if( this.value.length==0 ){
                     $(".msgerror.email").html('Debe ingresar el Email').slideDown("slow");
@@ -50,7 +50,7 @@ var Presup = new (function(){
                     $(".msgerror.email").slideUp("slow");
                 }
                 return true;
-            })
+            });
 
             $(".box2.option").each(function(){
                 $(this).find("input").click(function(){
@@ -62,6 +62,7 @@ var Presup = new (function(){
                             combobox.update("#cboTask");
                             $("div.hidden-div").css("display", "block");
                             $("div.hidden-div2, div.hidden-div3").css("display", "none");
+                            document.formPresup.typeproyect.value = "Diseño Web";
                         break;
 
                         case "dgrafico":
@@ -73,6 +74,7 @@ var Presup = new (function(){
                                          .append('<option value="Dise&ntilde;o Editorial">Dise&ntilde;o Editorial</option>');
                             combobox.update("#cboTask");
                             $("div.hidden-div, div.hidden-div2, div.hidden-div3").css("display", "none");
+                            document.formPresup.typeproyect.value = "Diseño Gráfico";
                         break;
 
                         case "marketing":
@@ -83,12 +85,13 @@ var Presup = new (function(){
                             combobox.update("#cboTask");
                             $("div.hidden-div").css("display", "none");
                             $("div.hidden-div2, div.hidden-div3").css("display", "block");
+                            document.formPresup.typeproyect.value = "Marketing";
                         break;
                     }
-
-                })
+                });
 
             });
+            $(".box2.option:first").find("input").click();
         }
     });
 						   

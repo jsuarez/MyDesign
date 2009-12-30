@@ -127,7 +127,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                                     </div>
                                     <div class="row hidden-div2">
                                         <span>Poblaci&oacute;n Objetivos</span>
-                                        <select name="cboTypeWeb" id="cboPoblacion">
+                                        <select name="cboPoblacion" id="cboPoblacion">
                                             <option value="Espa&ntilde;a">Espa&ntilde;a</option>
                                             <option value="Paises Habla Hispana">Paises Habla Hispana</option>
                                             <option value="Todos">Todos</option>
@@ -203,6 +203,7 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
                            <!-- end .formularios -->
 
                             <input type="hidden" name="action" value="sendpresp" />
+                            <input type="hidden" name="typeproyect" value="Diseño Web" />
 		        </form>
                 <?php }elseif( !$error ){?>
                 	

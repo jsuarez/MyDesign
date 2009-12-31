@@ -12,11 +12,11 @@ if( $_SERVER['REQUEST_METHOD']=="POST" && $_POST["action"]=="sendpresp" ){
     
     <!--======= SCRIPT "COMBOBOX" =======-->
     <link href="js/jquery.combobox/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery.combobox/js/jquery.combobox.js"></script>
+    <script type="text/javascript" src="js/jquery.combobox/js/jquery.combobox.min.js"></script>
     <script type="text/javascript" src="js/jquery.combobox/js/execute.js"></script>
     <!--======= END SCRIPT =======-->
 
-    <script type="text/javascript" src="js/presup.js"></script>
+    <script type="text/javascript" src="js/presup.min.js"></script>
 
 </head>
 

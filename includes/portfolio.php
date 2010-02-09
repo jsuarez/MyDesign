@@ -11,7 +11,4 @@
     <li>
         <a href="http://www.lycconsultora.com.ar/" target="_blank"><img src="images/ultimos_trabajos/lyc.png" alt="Lyc Consulta" width="433" height="136" /></a>
     </li>
-    <li>
-        <a href="http://www.latinoamericaexporta.com/" target="_blank"><img src="images/ultimos_trabajos/latinoamericaexporta.png" alt="Latino America Exporta" width="433" height="136" /></a>
-    </li>
 </ul>
